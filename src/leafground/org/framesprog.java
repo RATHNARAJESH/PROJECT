@@ -7,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class framesprog {
 	
+	private void add() {
+		System.out.println("addition");
+	}
+	
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Acer\\Downloads\\chromedriver_win32\\chromedriver.exe" );
@@ -37,6 +41,8 @@ public class framesprog {
 		Thread.sleep(1000);
 		WebElement button2 = driver.findElement(By.xpath("//button[@id='Click1']"));
 		button2.click();
+		
+		
 	}
 
 }
